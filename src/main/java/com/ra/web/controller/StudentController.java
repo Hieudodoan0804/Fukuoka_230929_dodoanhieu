@@ -44,7 +44,7 @@ public class StudentController {
         if (!folder.exists())
             folder.mkdir();
         if (!file.isEmpty()){
-            Path fileUpload = (Path) Paths.get(path + file.getOriginalFilename());
+//            Path fileUpload = (Path) Paths.get(path + file.getOriginalFilename());
             try {
 //                Files.write(fileUpload,file.getBytes());
                 model.addAttribute("uploaded",pathFolder + file.getOriginalFilename());
